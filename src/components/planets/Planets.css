@@ -1,0 +1,128 @@
+.planets_section {
+  background-image: url('https://img.freepik.com/free-photo/futuristic-video-game-equipment-illuminated-nightclub-generative-ai_188544-32105.jpg?t=st=1712810995~exp=1712814595~hmac=deb5b75e25b7723fc992038ab6758a845774346c5116122e0a4dcff94a7a28d4&w=996');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.tabButtons {
+  margin-bottom: 70px;
+}
+
+.tabButtons button {
+  font-size: 25px;
+  padding: 8px 8px;
+  margin: 15px 15px;
+  border-radius: 60px;
+  background-image: linear-gradient(#000000, #ffb6c1);
+  background-color: #000000;
+  color: #ffffcc;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.planet {
+  width: 350px;
+  border-radius: 20px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: planetEntrance 2s;
+}
+
+@keyframes planetEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.descriptions {
+  width: 500px;
+  margin-left: 50px;
+  overflow-x: hidden;
+}
+
+.description_title {
+  font-size: 50px;
+  color: #ffffcc;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  text-align: left;
+  font-weight: bold;
+  animation: titleEntrance 1s;
+}
+
+@keyframes titleEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.description_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.description_list li {
+  padding: 8px 16px;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 1;
+  animation: textEntrance 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.description_list li:nth-child(1) {
+  animation-delay: 2.5s;
+}
+
+.description_list li:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+.description_list li:nth-child(3) {
+  animation-delay: 2.5s;
+}
+
+.description_list li:nth-child(4) {
+  animation-delay: 2.5s;
+}
+
+.description_list li:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+@keyframes textEntrance {
+  0% {
+    transform: translatex(350px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translatex(40px);
+  }
+
+  100% {
+    transform: translatex(0);
+    opacity: 1;
+  }
+}
+
+.description_list li:last-child {
+  border-bottom: none;
+}

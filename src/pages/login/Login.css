@@ -1,0 +1,95 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/futuristic-video-game-equipment-illuminated-nightclub-generative-ai_188544-32105.jpg?t=st=1712810995~exp=1712814595~hmac=deb5b75e25b7723fc992038ab6758a845774346c5116122e0a4dcff94a7a28d4&w=996');
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+}
+
+.login {
+  background-image: linear-gradient(#eecda3, #ef629f);
+  margin: 40px auto;
+  padding: 35px 30px;
+  max-width: 320px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px #666;
+}
+  .login input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 35px; 
+    font-family: monospace, sans-serif;
+  }
+
+.login input[type=text],
+.login input[type=password] {
+  border: 1px solid #FFB6C1;
+  transition: .2s;
+}
+
+.login input[type=text]:hover {
+  border-color: #FFB6C1;
+  outline: none;
+  transition: all .2s ease-in-out;
+} 
+
+.login input[type=submit] {
+  border: none;
+  background: #DAF7A6;
+  color: black;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
+}
+
+.login input[type=submit]:hover {
+  background: #DAF7A6;  
+  cursor: pointer;
+}
+
+  .login h5 {
+    margin: 20px 0 0; 
+    color: #000000;
+    font-size: 20px;
+  }
+
+.login p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;  
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+.links a {
+  display: table-cell;
+  padding-top: 10px;
+  cursor: pointer;
+  color:#6F8FAF;
+}
+
+  .login h5,
+  .login p,
+  .login a {
+    text-align: center;    
+  }
+
+.login a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.login a:visited {
+  color: inherit;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
